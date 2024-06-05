@@ -16,3 +16,16 @@
 }
 
 ];
+function getDeliveryOption(deliveryOptionId)
+{
+  let diliveryOption;
+  diliveryOption.forEach((option)=>
+   {
+   if (option.id===deliveryOptionId){
+     diliveryOption=option;
+
+   }
+  });
+
+  return deliveryOption || deliveryOptions[0];
+}
